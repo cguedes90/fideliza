@@ -15,7 +15,9 @@
       "Bash(git push:*)",
       "Bash(npx vite:*)",
       "Bash(copy:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(openssl rand:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []
