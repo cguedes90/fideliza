@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(echo:*)",
+      "Bash(cat:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(taskkill:*)",
+      "Bash(magick:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
