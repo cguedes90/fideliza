@@ -1,5 +1,4 @@
 import { Router, Route, Switch, useLocation } from 'wouter'
-import { useState, useEffect } from 'react'
 import Login from './pages/Login'
 import LandingPage from './pages/LandingPage'
 import AdminDashboard from './pages/admin/Dashboard'
@@ -21,7 +20,7 @@ function App() {
 
 function AppRoutes() {
   const { user, isLoading } = useAuth()
-  const [location, setLocation] = useLocation()
+  const [, setLocation] = useLocation()
 
   if (isLoading) {
     return (

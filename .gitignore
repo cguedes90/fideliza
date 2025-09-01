@@ -1,0 +1,43 @@
+# Dependencies
+*/node_modules/
+node_modules/
+
+# Build outputs
+*/dist/
+*/build/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+
+# Development
+.vercel/

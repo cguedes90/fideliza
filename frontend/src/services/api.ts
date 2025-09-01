@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const API_BASE_URL = (import.meta as any).env.VITE_API_URL || '/api';
 
 class ApiService {
   private getAuthHeaders() {
@@ -13,8 +13,8 @@ class ApiService {
       headers: {
         'Content-Type': 'application/json',
         ...this.getAuthHeaders(),
-        ...options?.headers,
-      },
+        ...(options?.headers as Record<string, string>),
+      } as HeadersInit,
       ...options,
     });
 

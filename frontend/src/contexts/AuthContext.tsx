@@ -53,7 +53,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const data = await apiService.login(email, password);
       
       setToken(data.token)
-      setUser(data.user)
+      setUser(data.user as User)
       
       // Salvar no localStorage
       localStorage.setItem('fideliza_token', data.token)
@@ -76,7 +76,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       const data = await apiService.impersonateStoreOwner(storeId);
       
       setToken(data.token)
-      setUser(data.user)
+      setUser(data.user as User)
       
       // Salvar no localStorage
       localStorage.setItem('fideliza_token', data.token)

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '../../contexts/AuthContext'
 import { apiService } from '../../services/api'
-import { Route, Switch } from 'wouter'
 
 export default function AdminDashboard() {
   const { user, logout, impersonateStoreOwner } = useAuth()
